@@ -13,7 +13,7 @@ function Home() {
       var cards = references.current.querySelectorAll(".init-hidden");
       const observer = new IntersectionObserver((entries)=>{
          entries.forEach(entry =>{
-            if (entry.intersectionRatio >= 1) {
+            if (entry.intersectionRatio >= 0.7) {
                entry.target.classList.add('active');
                console.log(entry);
             } else{
@@ -21,7 +21,7 @@ function Home() {
             }
          })
       },{
-         threshold:[0,0.5,1]
+         threshold:[0,0.7,1]
       })
       cards.forEach(card => {
          observer.observe(card);

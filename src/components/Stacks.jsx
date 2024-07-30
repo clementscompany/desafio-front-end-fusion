@@ -21,13 +21,13 @@ function Stacks(){
                     <h3>Front-End</h3>
                     <br />
                     <br />
-                    <FlexContainer className={"imagesSkills init-hidden"}>
-                        <img src={html} alt="imageHTML" />
-                        <img src={css} alt="imageHTML" />
-                        <img src={js} alt="imageHTML" />
-                        <img src={react} alt="imageHTML" />
-                        <img src={bootstrapp} alt="imageHTML" />
-                        <img src={sass} alt="imageHTML" />
+                    <FlexContainer className={"imagesSkills"}>
+                        <img src={html} alt="imageHTML" className="init-hidden"/>
+                        <img src={css} alt="imageHTML"  className="init-hidden"/>
+                        <img src={js} alt="imageHTML"  className="init-hidden"/>
+                        <img src={react} alt="imageHTML"  className="init-hidden " />
+                        <img src={bootstrapp} alt="imageHTML" className="init-hidden" />
+                        <img src={sass} alt="imageHTML" className="init-hidden" />
                     </FlexContainer>
                 </div>
  
@@ -35,13 +35,13 @@ function Stacks(){
                     <h3>Back-End</h3>
                     <br />
                     <br />
-                    <FlexContainer className={"imagesSkills init-hidden"}>
-                        <img src={php} alt="imageHTML" />
-                        <img src={node} alt="imageHTML" />
-                        <img src={mysql} alt="imageHTML" />
-                        <img src={postgre} alt="imageHTML" />
-                        <img src={express} alt="imageHTML" />
-                        <img src={insomnia} alt="imageHTML" />
+                    <FlexContainer className={"imagesSkills"}>
+                        <img src={php} alt="imageHTML" className="init-hidden" />
+                        <img src={node} alt="imageHTML" className="init-hidden" />
+                        <img src={mysql} alt="imageHTML" className="init-hidden" />
+                        <img src={postgre} alt="imageHTML" className="init-hidden" />
+                        <img src={express} alt="imageHTML" className="init-hidden" />
+                        <img src={insomnia} alt="imageHTML" className="init-hidden" />
                     </FlexContainer>
                 </div>
             </div>

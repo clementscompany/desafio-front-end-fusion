@@ -146,12 +146,13 @@
           }
         }
       }
+      .rigthHeader.active{
+        display:flex;
+      }
     }
   }// end
 
-  .rigthHeader.active{
-  display:flex;
-  }
+  
 
   //banner
   .bannerContainer{

@@ -3,6 +3,7 @@ import { MobileContainer } from "./Elements";
 import { useEffect, useState } from "react";
 function Header({local}) {
     const [location, setLocation] = useState({home:"", contact:"", prooject:""});
+    const [isActive, setIsactive] = useState(false);
     useEffect(()=>{
         switch (local) {
             case 0:
@@ -35,15 +36,18 @@ function Header({local}) {
         window.history.pushState(null, null, "/");
         window.dispatchEvent(new Event('popstate'));
     };
-      
+    
+    const toggleMenu = () => {
+        setIsactive(before=> !before);
+    };
     return(
         <header className="header">
             <div className="leftHeader" onClick={backHome}><h1>MC</h1></div>
-            <button className="menuButton mobileButton">
+            <button className="menuButton mobileButton" onClick={toggleMenu}>
                 <i className="bi bi-three-dots-vertical"></i>
             </button>
-            <div className="rigthHeader">
-                <button className="mobileButton">
+            <div className={isActive == true ? ("rigthHeader active") : ("rigthHeader") }>
+                <button className="mobileButton" onClick={toggleMenu}>
                     <i className="bi bi-arrow-left"></i>
                 </button>
                 <Link to={"/"} className={ location.home }>Home</Link>
