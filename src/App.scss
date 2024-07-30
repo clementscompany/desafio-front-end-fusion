@@ -573,6 +573,10 @@
     gap: 22px;
     grid-template-columns: repeat(3, 1fr);
 
+      @media screen and (max-width:900px){
+         grid-template-columns: repeat(2, 1fr);
+    }
+
     .cardProject{
       width: 320px;
       height: 400px;
